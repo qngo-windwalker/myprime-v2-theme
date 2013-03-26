@@ -1,0 +1,113 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	margin: 0 auto;
+	background: #606060;
+	font-family: Verdana, Geneva, sans-serif;
+	color: #999
+}
+
+/*------------
+--------------
+Top Bar
+-------------
+---------------*/
+#titleBar.ICESystemBar {
+	background: url(../images/greytexturebg.png);
+	border: 0px none;
+	position: fixed;
+	font-size: 13px;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 54px;
+	padding: 0px;
+	-moz-box-shadow: 0px 4px 5px #000;
+	-webkit-box-shadow: 0px 4px 5px #00;
+	box-shadow: 0px 4px 5px #000;
+}
+#titlebarWrapper {
+	width:1020px;
+	margin:0 auto;
+	padding:0px;
+}
+
+/*----Branding----*/
+#branding {
+	position: relative;
+	padding:10px 10px 0px 10px;;
+	float: left;
+	overflow: hidden;
+}
+
+/*----Course Tree Button----*/
+#infoButton.toolInfo {
+	background-image: url(../images/coursetreebtn.png);
+	height: 54px;
+	width: 51px;
+	float: left;
+	padding-left: 10px;
+}
+#infoButton.toolInfo:hover {
+	background:#333;
+}
+
+/*----PROGRESS BAR AREA----*/
+#middleNavigationConsole {
+	background:#333; 
+	width:508px;
+	height:54px;
+	float:left;
+}
+
+/*----Resource Button----*/
+#resourceButton.toolResource {
+	background-image: url(../images/resourcebtn.png);
+	height: 54px;
+	width: 49px;
+	float: left;
+	padding-left: 10px;
+}
+#resourceButton.toolResource:hover {
+	background:#333;
+}
+
+
+/*----Logout Button----*/
+#systemControlContainer {
+	
+}
+#logoutButton.toolLogout {
+	background: url(../images/logoutbtn.png) no-repeat;
+	height: 54px;
+	width: 170px;
+	float: left;
+	padding-left:15px;
+}
+#logoutButton.toolLogout:hover {
+	background:#333;
+}
+/*------------
+--------------
+Bottom Bar
+-------------
+---------------*/
+#toolBar.ICEToolBar {
+	background: url(../images/toolbarbg.png) repeat-x;
+	border: 0px none;
+	padding: 0px;
+	height: 23px;
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	-moz-box-shadow: 0px -1px 5px #000;
+	-webkit-box-shadow: 0px -1px 5px #00;
+	box-shadow: 0px -1px 5px #000;
+}
+#toolBar.ICEToolBar p {
+	text-align: center;
+	font-size: 10px;
+	margin: 0px 0px 1px 0px;
+}
