@@ -14,12 +14,14 @@ body {
 h1 {font-size:18px;}
 h2 {font-size:14px;}
 
-h1, h2, h3 {
+h1, h2, h3, p {
 	margin:0px;
 	padding:8px 8px 0px 8px;
 	color:#4d4d4d;
 	text-shadow: 0px 1px 0px #fff;
 }
+p {padding-bottom:8px; font-size:14px;}
+p.userstats {color:#4a8e70;font-weight:600;}
 
 hr.triLine {
 	background:url(../images/tripleline_hr.png) repeat-x;
