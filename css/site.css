@@ -80,7 +80,7 @@ a:hover {
 	padding:8px 15px 0px 15px;
 	}
 /*------------Button Links-----------*/
-a.orgBtn, .grnBtn {
+a.orgBtn, .grnBtn, innernav li{
 	padding: 8px 23px;	
 	text-shadow: #171209 0 1px 2px;
 	color: #ffffff;
@@ -163,10 +163,7 @@ a.orgBtn, .grnBtn {
    background-image: -ms-linear-gradient(top, #96bd60 0%, #8bc63f 100%);  
 }
 /*----Course Buttons------*/
-.innernav li {
-	display:block;
-	width:10%;
-	float:left;
+.innernav {
 	border: 1px solid #424242;
 	background: #284f4b;
 	background: -webkit-gradient(linear, left top, left bottom, from(#386963), to(#284f4b));
@@ -187,7 +184,7 @@ a.orgBtn, .grnBtn {
 	text-decoration: none;
 	vertical-align: middle;
    }
-.innernav:hover li {
+.innernav:hover, .innernav:active {
 	border: 1px solid #424242;
 	background: #8bc63f;
 	background: -webkit-gradient(linear, left top, left bottom, from(#6b9c27), to(#8bc63f));
@@ -197,18 +194,6 @@ a.orgBtn, .grnBtn {
 	background: -o-linear-gradient(top, #6b9c27, #8bc63f);
 	background-image: -ms-linear-gradient(top, #6b9c27 0%, #8bc63f 100%);
 	color: #fff;
-	padding: 6.5px 13px;
-   }
-.innernav:active li {
-   border: 1px solid #424242;
-   background: #8bc63f;
-   background: -webkit-gradient(linear, left top, left bottom, from(#96bd60), to(#8bc63f));
-   background: -webkit-linear-gradient(top, #96bd60, #8bc63f);
-   background: -moz-linear-gradient(top, #96bd60, #8bc63f);
-   background: -ms-linear-gradient(top, #96bd60, #8bc63f);
-   background: -o-linear-gradient(top, #96bd60, #8bc63f);
-   background-image: -ms-linear-gradient(top, #96bd60 0%, #8bc63f 100%);
-   color: #fff;
    }
 
 
@@ -230,16 +215,7 @@ ol ul li,ul li {
 li {
 	list-style: none;
 }
-ul.reviewnav {
-	margin:0px;
-	}
-ul.reviewnav li{
-	display:block;
-	width:130px;
-	float:left;
-	margin:0px;
-	padding:0px;
-	}
+
 #footer ul {
 	padding:0px;
 }
@@ -365,7 +341,7 @@ Content area
 	overflow:scroll;
 
 	} 
-.innernav {
+#innernav {
 	height:30px;
 }
 #reviewRight {
