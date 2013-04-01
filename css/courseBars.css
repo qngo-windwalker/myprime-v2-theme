@@ -4,6 +4,7 @@
 body {
 	margin: 0 auto;
 	font-family: Verdana, Geneva, sans-serif;
+	font-size:14px;
 	color: #999;
 	background:url(../images/GUI_bglogo.png) no-repeat #606060;
 }
@@ -64,20 +65,20 @@ Top Bar
 
 #progressContainer {
 	background:#666666;
-	position:relative;
 	margin:15px auto;
 	width:462px;
 	height:26px;
+	padding:1px;
 	-moz-box-shadow: inset 0 0 5px #888;
 	-webkit-box-shadow: inset 0 0 5px#888;
 	box-shadow: inner 0 0 5px #888;
 	}
 .reflect {
-	z-index:900;
+	z-index:4;
 	background:url(../images/reflection.png);
 	width:462px;
 	height:26px;
-	position:absolute;
+	position:relative;
 	}
 .progressColor {
 	background:url(../images/progresscolor.png) no-repeat;
@@ -85,21 +86,20 @@ Top Bar
 	height:24px;
 	margin-top:1px;
 	z-index:3;
-	position:absolute;
-	top:0px;
+	position: relative;
 	-moz-box-shadow: inset 0 0 2px 2px #6b8663;
 	-webkit-box-shadow: inset 0 0 2px 5px#6b8663;
 	box-shadow: inset 0 0 2px 2px #6b8663;
 	}
 
 #pText {
-	text-align:right;
-	font:bold 14px;
-	margin: 0px;
-	padding: 4px 15px 0px 15px;
+	text-align:center;
+	font-weight:600;
+	letter-spacing:1px;
+	padding-top: 4px;
 	color: #fff;
-	text-shadow: 0px 1px 0px #fff;
-
+	text-shadow: 0px 1px 0px #000;
+	z-index:10;
 }
 
 /*----Resource Button----*/
@@ -110,11 +110,9 @@ Top Bar
 	float: left;
 	padding-left: 10px;
 	text-indent:-9999px
-
 }
 #resourceButton.toolResource:hover {
 	background-position:-59px 0px;
-	
 }
 
 
@@ -125,13 +123,13 @@ Top Bar
 #logoutButton.toolLogout {
 	background: url(../images/logoutbtn.png) no-repeat;
 	height: 54px;
-	width: 168px;
+	width: 173px;
 	float: left;
-	text-indent:-9999px
+	text-indent:-9999px;
 
 }
 #logoutButton.toolLogout:hover {
-	background-position:-168px 0px;
+	background-position:-175px 0px;
 }
 /*------------
 --------------
