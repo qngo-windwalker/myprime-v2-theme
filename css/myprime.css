@@ -3,10 +3,11 @@
 
 body {
 	margin: 0 auto;
-	background: #606060;
 	font-family: Verdana, Geneva, sans-serif;
-	color: #999
+	color: #999;
+	background:url(../images/GUI_bglogo.png) no-repeat #606060;
 }
+
 
 /*------------
 --------------
@@ -71,14 +72,34 @@ Top Bar
 	-webkit-box-shadow: inset 0 0 5px#888;
 	box-shadow: inner 0 0 5px #888;
 	}
+.reflect {
+	z-index:900;
+	background:url(../images/reflection.png);
+	width:462px;
+	height:26px;
+	position:absolute;
+	}
+.progressColor {
+	background:url(../images/progresscolor.png) no-repeat;
+	width:50%;
+	height:24px;
+	margin-top:1px;
+	z-index:3;
+	position:absolute;
+	top:0px;
+	-moz-box-shadow: inset 0 0 2px 2px #6b8663;
+	-webkit-box-shadow: inset 0 0 2px 5px#6b8663;
+	box-shadow: inset 0 0 2px 2px #6b8663;
+	}
+
 #pText {
 	text-align:right;
 	font:bold 14px;
 	margin: 0px;
-	padding: 5px 15px 0px 15px;
+	padding: 4px 15px 0px 15px;
 	color: #fff;
 	text-shadow: 0px 1px 0px #fff;
-	
+
 }
 
 /*----Resource Button----*/
