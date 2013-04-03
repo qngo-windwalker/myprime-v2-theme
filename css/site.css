@@ -134,7 +134,7 @@ a.orgBtn, .grnBtn, innernav li{
 	background-image: -ms-linear-gradient(top, #ffa545 0%, #f7921e 100%);
 }
 
-.grnBtn, ul.accordion li.topicTitle {
+.grnBtn, ul.accordion li.unitTitle {
 	border: 1px solid #424242; 
 	background: #8bc63f; 
 	background: -webkit-gradient(linear, left top, left bottom, from(#96bd60), to(#8bc63f));
@@ -150,7 +150,7 @@ a.orgBtn, .grnBtn, innernav li{
 	-moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
 	rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
    }
-.grnBtn:hover,ul.accordion li.topicTitle:hover {
+.grnBtn:hover,ul.accordion li.unitTitle:hover {
 	background: #8bc63f;
 	background: -webkit-gradient(linear, left top, left bottom, from(#6b9c27), to(#8bc63f));
 	background: -webkit-linear-gradient(top, #6b9c27, #8bc63f);
@@ -317,16 +317,27 @@ ul.accordion, ul.accordion ul.componentList {
 	width:210px;
 	list-style:none;
 	}
-ul.accordion li.topicTitle {
+ul.accordion li.unitTitle {
 	display:block;
-	width:197px;
+	width:210px;
+	text-shadow: #1d281b 0 1px 0;
+	margin-bottom:1px;
+	/*border:none;*/
+	}
+ul.accordion li.unitTitle h3 {
+	display:block;
+	width:180px;
 	color:#FFF;
 	font-weight:600;
 	padding:5px 5px 5px 8px;
 	text-shadow: #1d281b 0 1px 0;
-	border:none;
-
-	}
+	background:url(../images/accordionup.png) no-repeat right;
+	
+}
+ul.accordion li.unitTitle h3:hover,ul.accordion li.unitTitle h3.current  {
+	background:url(../images/accordiondown.png) no-repeat right;
+	
+}
 ul.accordion ul.componentList li.componentTitle {
 	display:block;
 	border-top:1px solid #FFF;
