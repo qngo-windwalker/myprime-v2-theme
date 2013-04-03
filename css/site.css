@@ -29,7 +29,7 @@ input[type=button] {
 Typography
 -------------
 ---------------*/
-h1, h2, h3, p, a, a:hover, ol, ul {
+h1, h2, h3, p, a, a:hover, ol, ul, tr.firstRow, tr {
 	margin: 0px;
 	padding: 8px 15px 0px 15px;
 	color: #4d4d4d;
@@ -45,11 +45,24 @@ p,ol,ul {
 h1 {
 	font-size: 18px;
 }
-
+h1.reviewHeader,h1.info,h1.notify,h1.achieve {
+	margin:5px;
+	padding:1px 27px;
+}
 h1.reviewHeader {
 	background:url(../images/starIcon.png) no-repeat;
-	padding:0px 27px;
-	margin:5px;
+	}
+h1.info {
+	background:url(../images/courseInfoIcon.png) no-repeat;
+	}
+	
+h1.notify {
+	background:url(../images/notificationIcon.png) no-repeat;
+	}
+	
+h1.achieve {
+	background:url(../images/achieveIcon.png) no-repeat;
+	padding:1px 35px;
 	}
 h2 {
 	font-size: 14px;
@@ -233,6 +246,69 @@ li {
 #footer ul li {
 	list-style:none;
 }
+/* ------------------ Table Styles ------------------ */
+
+table {
+  border: 0;
+  border-spacing: 0;
+  font-size: 0.857em;
+  margin: 10px 0;
+  width: 100%;
+}
+table table {
+  font-size: 1em;
+}
+#footer-wrapper table {
+  font-size: 1em;
+}
+table tr th {
+  border-bottom-style: none;
+  background:none;
+}
+table tr th,
+table tr th a,
+table tr th a:hover {
+  font-weight: bold;
+}
+table tbody tr th {
+  vertical-align: top;
+}
+tr td,
+tr th {
+  padding: 4px 9px;
+  text-align: left; /* LTR */
+}
+tr.odd {
+
+}
+
+tr.even {
+  background: #efefef;
+  background: rgba(0, 0, 0, 0.063);
+}
+table ul.links {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+}
+table ul.links li {
+  padding: 0 1em 0 0;
+}
+
+table tr.firstRow {
+	background:none;
+	border:0px none;
+}
+
+.date {
+	text-align:right;
+}
+tr.latestNotify {
+	color:#FFF;
+	text-shadow:none;
+	background:#74b64a;
+	}
+
 /*------------
 --------------
 Header
@@ -356,6 +432,20 @@ ul.accordion ul.componentList li.componentTitleNote:hover {
 ul.accordion ul.componentList li.componentTitle:hover {
 	background:#e6e6e6;
 	}
+
+ul.courseInfoList {
+	margin:0px auto;
+	padding:0px 8px;
+	}
+ul.courseInfoList li {
+	list-style:none;
+	font-weight:bold;
+	font-size:12px;
+}
+ul.courseInfoList li .infoText {
+	color:#4a8e70;
+	
+}
 /*------------
 --------------
 Content area
@@ -391,6 +481,29 @@ Content area
 	width: 100%;
 	border: 1px solid #000;
 }
+/*-------Dashboard----*/
+#courseInfo, #notifications,#achievements {
+	position:relative;
+	float:left;
+	display:block;
+	height:176px;
+	}
+#courseInfo {
+	width:276px;
+	height:176px;
+	border-right:1px solid #fff;
+	}
+#notifications {
+	border-right:1px solid #fff;
+	border-left:1px solid #CCC;
+	width:400px;
+
+	}
+#achievements {
+	border-left:1px solid #CCC;
+	width:270px;
+	float:right;
+	}
 /*-------Review----*/
 #reviewLeft {
 	width:238px;

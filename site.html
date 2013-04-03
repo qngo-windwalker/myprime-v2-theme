@@ -49,27 +49,44 @@
   <!--> 
   <!--Start Content Here
 <!-->
-  <div id="mainContent"> 
-    <!--Examples of full and half width
+  <div id="mainContent">
     <div id="contentBox" class="wide">
       <div class="box">
-        <h1>
-        Title Here
-        </h1>
-        <hr class="triLine"/>
-        <p>Regular Text Here</p>
-        <p><strong>Bold Paragraph text here</strong></p><p class="userstats">User stats text</p>
+        <div id="courseInfo">
+          <h1 class="info">Course Info</h1>
+          <hr class="triLine"/>
+          <ul class="courseInfoList">
+            <li>User:<span class="infoText"> Username</span></li>
+            <li>Complete:<span class="infoText"> 0%</span></li>
+            <li>Location:<span class="infoText"> What Do I Value? (U1L1T0)</span></li>
+            <li>Version:<span class="infoText"> 2.0</span></li>
+          </ul>
+        </div>
+        <div id="notifications">
+          <h1 class="notify">Notifications</h1>
+          <hr class="triLine"/>
+          <table>
+            <tr class="firstRow">
+              <th>Subject</th>
+              <th class="date">Date</th>
+            </tr>
+            <tr class="latestNotify">
+              <td>Version 2.0 coming soon!</td>
+              <td class="date">04-03-13</td>
+            </tr>
+            <tr>
+              <td>Subject</td>
+              <td class="date">Date</td>
+            </tr>
+          </table>
+        </div>
+        <div id="achievements">
+          <h1 class="achieve">Achievements</h1>
+          <hr class="triLine"/>
+        </div>
+        <br style="clear: left;" />
       </div>
     </div>
-               
-                    <div id="contentBox" class="half">
-                      <div class="box">
-                        <h1>
-                        Title Here
-                        </h1>
-                        <hr class="triLine"/>
-                      </div>
-                    </div>-->
     <div id="contentBox" class="wide">
       <div class="box">
         <h1 class="reviewHeader"> Review </h1>
@@ -77,51 +94,47 @@
         <div id="reviewRight">
           <h2>Lesson Title</h2>
           <p>Lesson Length:00:00:00</p>
-          <div id="innernav">
-          	<a class="current">Review</a>
-            <a>Notes</a>
-            <a>Reflections</a>
-            <a>Bookmarks</a>
-           </div>
+          <div id="innernav"> <a class="current">Review</a> <a>Notes</a> <a>Reflections</a> <a>Bookmarks</a> </div>
           <hr class="triLine">
-         <div class="reviewContentArea">
-          <!-- Text content here-->
+          <div class="reviewContentArea"> 
+            <!-- Text content here-->
             <h3>Description</h3>
             <p>People making high-risk choices often don't see that their problems are caused by their alcohol and drug use. The Spiral helps to explain why. It describes a collection of experiences that can trick someone into believing that their health and impairment problems are not associated with their high-risk alcohol and drug use.</p>
-            
             <p>These experiences include:</p>
             <ul>
-            <li>Social dependence that normalizes problems.</li>
-            <li>Enabling that removes consequences of problems.</li>
-            <li>Withdrawal learning, that teaches people that alcohol or drugs cure the pain of withdrawal.</li>
-            <li>Memory blackouts that erase people's recollection of consequences.</li>
-            <li>State-dependent learning that locks up emotions and skills.</li>
-            <li>Psychological defenses and mechanisms that make it more difficult to understand consequences.</li>
-            <li>Impaired abstract thinking skills that distort cause and effect.</li>
+              <li>Social dependence that normalizes problems.</li>
+              <li>Enabling that removes consequences of problems.</li>
+              <li>Withdrawal learning, that teaches people that alcohol or drugs cure the pain of withdrawal.</li>
+              <li>Memory blackouts that erase people's recollection of consequences.</li>
+              <li>State-dependent learning that locks up emotions and skills.</li>
+              <li>Psychological defenses and mechanisms that make it more difficult to understand consequences.</li>
+              <li>Impaired abstract thinking skills that distort cause and effect.</li>
             </ul>
             <p>The separate experiences of the Spiral in turn feed the Spiral, and that can propel our progression through the high-risk phases of use.</p>
-                <div id="innernav">
-                            <a>Go to lesson</a>
-                </div>
-       </div>
-  </div>
+            <div id="innernav"> <a>Go to lesson</a> </div>
+          </div>
+        </div>
         <div id="reviewLeft">
           <ul class="accordion">
-          	<li class="unitTitle"><h3 class="current">Unit 1</h3></li>
-            	<ul class="componentList">
-            	<li class="componentTitle">Component1</li>
-                <li class="componentTitle">Component2</li>
-                <li class="componentTitle">Example of a fairly long title goes here</li>
-                </ul>
-            
-            <li class="unitTitle"><h3>Unit 2</h3></li>
+            <li class="unitTitle">
+              <h3 class="current">Unit 1</h3>
+            </li>
             <ul class="componentList">
-            	<li class="componentTitleNote">Component1</li>
-                </ul>
-            <li class="unitTitle"><h3>Unit 3</h3></li>
+              <li class="componentTitle">Component1</li>
+              <li class="componentTitle">Component2</li>
+              <li class="componentTitle">Example of a fairly long title goes here</li>
+            </ul>
+            <li class="unitTitle">
+              <h3>Unit 2</h3>
+            </li>
+            <ul class="componentList">
+              <li class="componentTitleNote">Component1</li>
+            </ul>
+            <li class="unitTitle">
+              <h3>Unit 3</h3>
+            </li>
           </ul>
         </div>
-        
       </div>
     </div>
   </div>
