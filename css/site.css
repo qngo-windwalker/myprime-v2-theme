@@ -338,14 +338,20 @@ ul.accordion li.unitTitle h3:hover,ul.accordion li.unitTitle h3.current  {
 	background:url(../images/accordiondown.png) no-repeat right;
 	
 }
-ul.accordion ul.componentList li.componentTitle {
+ul.accordion ul.componentList li.componentTitle, ul.accordion ul.componentList li.componentTitleNote  {
 	display:block;
 	border-top:1px solid #FFF;
 	border-bottom:1px solid #CCC;
 	font-weight:normal;
 	padding:5px 0px 5px 8px;
+	}
+ul.accordion ul.componentList li.componentTitleNote {
+	padding:5px 0px 5px 15px;
+	background:url(../images/noteIcon_small.png) no-repeat left;
+	}
+ul.accordion ul.componentList li.componentTitleNote:hover {
+	background:#e6e6e6 url(../images/noteIcon_small.png) no-repeat left;
 
-	
 	}
 ul.accordion ul.componentList li.componentTitle:hover {
 	background:#e6e6e6;
@@ -407,6 +413,7 @@ Content area
 	height:330px;
 	overflow:scroll;
 	}
+
 /*------------
 --------------
 Footer
