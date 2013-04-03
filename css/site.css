@@ -246,9 +246,9 @@ Header
 }
 #headerContainer {
 	position: relative;
-	width: 960px;
+	width: 1020px;
 	margin: 0 auto;
-	padding: 0px 24px 0px 24px;
+	padding: 0px 0px 0px 60px;
 }
 #branding {
 	position: relative;
@@ -264,8 +264,8 @@ Header
 }
 #navigationButtons {
 	height: 63px;
-	float: left;
-}
+/*	float: left;
+*/}
 ul.topNav {
 	margin: 0px;
 	padding: 0px;
