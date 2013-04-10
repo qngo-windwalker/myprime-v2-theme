@@ -4,12 +4,10 @@
 body {
 	margin: 0 auto;
 	font-family: Verdana, Geneva, sans-serif;
-	font-size:14px;
+	font-size: 14px;
 	color: #999;
-	background:url(../images/GUI_bglogo.png) no-repeat #606060;
+	background: url(../images/GUI_bglogo.png) no-repeat #606060;
 }
-
-
 /*------------
 --------------
 Top Bar
@@ -30,19 +28,18 @@ Top Bar
 	box-shadow: 0px 4px 5px #000;
 }
 #titlebarWrapper {
-	width:1020px;
-	margin:0 auto;
-	padding:0px;
+	width: 1020px;
+	margin: 0 auto;
+	padding: 0px;
 }
-
 /*----Branding----*/
 #branding {
 	position: relative;
-	padding:10px 10px 0px 10px;;
+	padding: 10px 10px 0px 10px;
+	;
 	float: left;
 	overflow: hidden;
 }
-
 /*----Course Tree Button----*/
 #infoButton.toolInfo {
 	background-image: url(../images/coursetreebtn.png);
@@ -50,58 +47,54 @@ Top Bar
 	width: 51px;
 	float: left;
 	padding-left: 10px;
-	text-indent:-9999px
+	text-indent: -9999px
 }
 #infoButton.toolInfo:hover {
-	background-position:-60px 0px;
+	background-position: -60px 0px;
 }
-
 /*----PROGRESS BAR AREA----*/
-#middleNavigationConsole { 
-	width:508px;
-	height:54px;
-	float:left;
+#middleNavigationConsole {
+	width: 508px;
+	height: 54px;
+	float: left;
 }
-
 #progressContainer {
-	background:#666666;
-	margin:15px auto;
-	width:462px;
-	height:26px;
-	padding:1px;
+	background: #666666;
+	margin: 15px auto;
+	width: 462px;
+	height: 26px;
+	padding: 1px;
 	-moz-box-shadow: inset 0 0 5px #888;
 	-webkit-box-shadow: inset 0 0 5px#888;
 	box-shadow: inner 0 0 5px #888;
-	}
+}
 .reflect {
-	z-index:4;
-	background:url(../images/reflection.png);
-	width:462px;
-	height:26px;
-	position:relative;
-	}
+	z-index: 4;
+	background: url(../images/reflection.png);
+	width: 462px;
+	height: 26px;
+	position: relative;
+}
 .progressColor {
-	background:url(../images/progresscolor.png) no-repeat;
-	width:50%;
-	height:24px;
-	margin-top:1px;
-	z-index:3;
+	background: url(../images/progresscolor.png) no-repeat;
+	width: 50%;
+	height: 24px;
+	margin-top: 1px;
+	z-index: 3;
 	position: relative;
 	-moz-box-shadow: inset 0 0 2px 2px #6b8663;
 	-webkit-box-shadow: inset 0 0 2px 5px#6b8663;
 	box-shadow: inset 0 0 2px 2px #6b8663;
-	}
-
+}
 #pText {
-	text-align:center;
-	font-weight:600;
-	letter-spacing:1px;
+	text-align: center;
+	font-weight: 600;
+	letter-spacing: 1px;
 	padding-top: 4px;
 	color: #fff;
 	text-shadow: 0px 1px 0px #000;
-	z-index:10;
+	z-index: 10;
 }
-
 /*----Resource Button----*/
 #resourceButton.toolResource {
 	background-image: url(../images/resourcebtn.png);
@@ -109,27 +102,23 @@ Top Bar
 	width: 49px;
 	float: left;
 	padding-left: 10px;
-	text-indent:-9999px
+	text-indent: -9999px
 }
 #resourceButton.toolResource:hover {
-	background-position:-59px 0px;
+	background-position: -59px 0px;
 }
-
-
 /*----Logout Button----*/
 #systemControlContainer {
-	
 }
 #logoutButton.toolLogout {
 	background: url(../images/logoutbtn.png) no-repeat;
 	height: 54px;
 	width: 173px;
 	float: left;
-	text-indent:-9999px;
-
+	text-indent: -9999px;
 }
 #logoutButton.toolLogout:hover {
-	background-position:-175px 0px;
+	background-position: -175px 0px;
 }
 /*------------
 --------------
@@ -154,5 +143,56 @@ Bottom Bar
 	font-size: 10px;
 	margin: 0px 0px 1px 0px;
 }
+#iframe {
+	overflow: hidden;
+	height: 100%;
+	width: 100%
+}
+/*------------
+--------------
+Info Panel
+-------------
+---------------*/
+#infoPanel {
+	top: 55px;
+	z-index: 999999;
+	position: absolute;
+	width:300px;
+	-moz-box-shadow:0 0 5px #000;
+	-webkit-box-shadow:0 0 5px#000;
+	box-shadow:0 0 5px #000;	
+}
 
-#iframe {overflow:hidden;height:100%;width:100%}
+#infoPanelBody {
+	background: none repeat scroll 0% 0% rgb(244, 244, 244);
+	padding:0px;
+	margin:0px;
+	overflow:scroll;
+	height:614px;
+}
+
+#infoPanelBar {
+	width:300px;
+	height:50px;
+	background:rgb(244, 244, 244);
+	padding:0px;
+}
+#infoPanelBar h1{
+	padding-top:10px;
+}
+#closeInfo,#menuBtn,#resources {
+	display:none;
+}
+
+ul.accordion {
+	margin:0px;
+}
+ul.accordion, ul.accordion ul.componentList, ul.accordion li.unitTitle {
+	width: 265px;
+}
+ul.accordion, ul.accordion ul.componentList {
+	padding-left:8px;
+	}
+ul.accordion li.unitTitle h3 {
+	width:240px;
+}
