@@ -75,6 +75,10 @@ h3.notes {
 	padding:2px 25px;
 	margin:8px;
 }
+
+h3.reflections {
+	font-style:italic;
+	}
 /*------------Paragraphs-----------*/
 
 p.userstats {
