@@ -69,6 +69,12 @@ h2 {
 h3 {
 	font-size: 12px;
 }
+
+h3.notes { 
+	background:url(../images/noteIcon_big.png) no-repeat;
+	padding:2px 25px;
+	margin:8px;
+}
 /*------------Paragraphs-----------*/
 
 p.userstats {
@@ -480,19 +486,19 @@ ul.myStuffNav {
 	padding:0px;
 	clear:both;
 }
-ul.myStuffNav li,ul.myStuffOptions li {
+ul.myStuffNav li,ul.myOptions li {
 	display:block;
 	float:left;
 	height:50px;
 	text-align:center;
 }
 
-ul.myStuffOptions {
+ul.myOptions {
 	margin:0 auto;
 	padding:0px;
 	float:right;
 }
-ul.myStuffOptions li, ul.myStuffNav li.back {
+ul.myOptions li, ul.myStuffNav li.back {
 	width:50px;
 	
 }
@@ -503,13 +509,13 @@ ul.myStuffNav li.title {
 	border-left:1px solid #CCC;
 
 }
-li.back, li.save, li.email, li.print {
+li.back, li.save, li.email, li.print, li.edit {
 	background:url(../images/backIcon.png) no-repeat center;
 	text-indent:-9999px;
 	border-right:1px solid #fff;
 	border-left:1px solid #CCC;	
 	}
-li.back:hover, li.save:hover, li.email:hover, li.print:hover {
+li.back:hover, li.save:hover, li.email:hover, li.print:hover, li.edit:hover {
 	-moz-box-shadow: inset 0 0 5px #000;
 	-webkit-box-shadow: inset 0 0 5px#000;
 	box-shadow: inset 0 0 5px #000;
@@ -523,6 +529,9 @@ li.email {
 }
 li.print {
 	background:url(../images/printIcon.png) no-repeat center;
+}
+li.edit {
+	background:url(../images/editIcon.png) no-repeat center;
 }
 /*------------
 --------------
@@ -603,6 +612,13 @@ Content area
 	height: 330px;
 	overflow: scroll;
 }
+
+#reviewInsideTitle {
+	display:block;
+	height:50px;
+	width:250px;
+	float:left;
+	}
 /*------------My Stuff --------*/
 .mystuffContent {
 	width: 712px;
