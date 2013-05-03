@@ -192,7 +192,7 @@ a.orgBtn, .grnBtn, innernav li {
   
 }
 /*----Course Buttons------*/
-#innernav a {
+#innernav a, #innernavTmm a {
 	display: block;
 	float: left;
 	margin: 0 auto;
@@ -219,7 +219,7 @@ a.orgBtn, .grnBtn, innernav li {
 	text-align: center;
    
 }
-#innernav a.current, #innernav a:hover, #innernav a:active {
+#innernav a.current, #innernav a:hover, #innernav a:active, #innernavTmm a.current, #innernavTmm a:hover, #innernavTmm a:active {
 	border: 1px solid #424242;
 	background: #8bc63f;
 	background: -webkit-gradient(linear, left top, left bottom, from(#6b9c27), to(#8bc63f));
@@ -231,6 +231,11 @@ a.orgBtn, .grnBtn, innernav li {
 	color: #fff;
    
 }
+
+#innernavTmm a {
+	margin:3px 0px;
+	
+	}
 /*------------Lists-----------*/
 ol, ul {
 	padding-left: 30px;
@@ -642,6 +647,19 @@ Content area
 	-webkit-box-shadow: inset 0 0 5px#000;
 	box-shadow: inset 0 0 5px #000;
 }
+/*------------Tell Me More --------*/
+#alphabet {
+	margin:0px 40px;
+	}
+#alphabet a {
+	font-size:18px;
+	}
+#searchArea {
+	float: right;
+	width: 315px;
+	height: 36px;
+	}
+	
 /*------------
 --------------
 Footer
