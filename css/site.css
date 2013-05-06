@@ -155,7 +155,7 @@ a.orgBtn, .grnBtn, innernav li {
 	background: -o-linear-gradient(top, #8f4a00, #c76a00);
 	background-image: -ms-linear-gradient(top, #ffa545 0%, #f7921e 100%);
 }
-.grnBtn, ul.accordion li.unitTitle {
+.grnBtn, ul.accordion li.unitTitle, li.topic {
 	border: 1px solid #424242;
 	background: #8bc63f;
 	background: -webkit-gradient(linear, left top, left bottom, from(#96bd60), to(#8bc63f));
@@ -172,7 +172,7 @@ a.orgBtn, .grnBtn, innernav li {
  rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
    
 }
-.grnBtn:hover, ul.accordion li.unitTitle:hover {
+.grnBtn:hover, ul.accordion li.unitTitle:hover, li.topic:hover{
 	background: #8bc63f;
 	background: -webkit-gradient(linear, left top, left bottom, from(#6b9c27), to(#8bc63f));
 	background: -webkit-linear-gradient(top, #6b9c27, #8bc63f);
@@ -397,13 +397,14 @@ ul.accordion, ul.accordion ul.componentList {
 	width: 210px;
 	list-style: none;
 }
-ul.accordion li.unitTitle {
+ul.accordion li.unitTitle, ul.accordion li.topic {
 	display: block;
 	width: 210px;
 	text-shadow: #1d281b 0 1px 0;
 	margin-bottom: 1px;/*border:none;*/
 }
-ul.accordion li.unitTitle h3 {
+
+ul.accordion li.unitTitle h3, ul.accordion li.topic h3 {
 	display: block;
 	width: 180px;
 	color: #FFF;
@@ -412,16 +413,26 @@ ul.accordion li.unitTitle h3 {
 	text-shadow: #1d281b 0 1px 0;
 	background: url(../images/accordionup.png) no-repeat right;
 }
-ul.accordion li.unitTitle h3:hover, ul.accordion li.unitTitle h3.current {
+ul.accordion li.topic h3 {
+	width:900px;	
+}
+#faqs ul.accordion, ul.accordion li.topic,#faqs ul.accordion ul.componentList {
+	width:930px;
+}
+
+ul.accordion li.unitTitle h3:hover, ul.accordion li.unitTitle h3.current, ul.accordion li.topic h3.current, ul.accordion li.topic h3:hover {
 	background: url(../images/accordiondown.png) no-repeat right;
 }
-ul.accordion ul.componentList li.componentTitle, ul.accordion ul.componentList li.componentTitleNote {
+ul.accordion ul.componentList li.componentTitle, ul.accordion ul.componentList li.componentTitleNote, ul.componentList li.faqTitle {
 	display: block;
 	border-top: 1px solid #FFF;
 	border-bottom: 1px solid #CCC;
 	font-weight: normal;
 	padding: 5px 0px 5px 8px;
 }
+ul.componentList li.faqTitle {
+	font-weight:bold;
+	}
 ul.accordion ul.componentList li.componentTitleNote {
 	padding: 5px 0px 5px 15px;
 	background: url(../images/noteIcon_small.png) no-repeat left;
@@ -429,7 +440,7 @@ ul.accordion ul.componentList li.componentTitleNote {
 ul.accordion ul.componentList li.componentTitleNote:hover {
 	background: #e6e6e6 url(../images/noteIcon_small.png) no-repeat left;
 }
-ul.accordion ul.componentList li.componentTitle:hover {
+ul.accordion ul.componentList li.componentTitle:hover,ul.componentList li.faqTitle:hover {
 	background: #e6e6e6;
 }
 ul.courseInfoList {
@@ -659,7 +670,11 @@ Content area
 	width: 315px;
 	height: 36px;
 	}
-	
+#faqs {
+	width: 950px;
+	height: 330px;
+	overflow: scroll;
+}	
 /*------------
 --------------
 Footer
