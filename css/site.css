@@ -713,7 +713,13 @@ Footer
 	width: 430px;
 	float: left;
 }
+
 #contact {
 	width: 430px;
 	float: right;
+}
+.contact {
+	width: 430px;
+	float: left;
+	padding-left:50px;
 }
