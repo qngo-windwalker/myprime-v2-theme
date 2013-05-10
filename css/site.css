@@ -447,12 +447,12 @@ ul.courseInfoList {
 	margin: 0px auto;
 	padding: 0px 8px;
 }
-ul.courseInfoList li {
+ul.courseInfoList li, .infoText {
 	list-style: none;
 	font-weight: bold;
 	font-size: 12px;
 }
-ul.courseInfoList li .infoText {
+ul.courseInfoList li .infoText, .infoText {
 	color: #4a8e70;
 }
 ul.myStuffMenu {
@@ -610,6 +610,89 @@ Content area
 	width: 270px;
 	float: right;
 }
+#achievements a {
+	padding:3px 0px 0px 30px;
+}
+#achievements .infoText {
+	padding-left:15px;
+}
+#achieveFlipper {
+	width:270px;
+	height:60px;
+	margin-top:8px;
+}
+
+#achieveFlipper .leftArrow {
+		background:url(../images/leftArrow.png) no-repeat;
+		width:27px;
+		height:44px;
+		margin:15px 5px 0px 8px;
+		float:left;
+}
+#achieveFlipper .rightArrow {
+		background:url(../images/rightArrow.png) no-repeat;
+		width:27px;
+		height:44px;
+		margin:15px 5px 0px 8px;
+		float:right;
+}
+#achieveFlipper .leftArrow:hover {
+		background:url(../images/leftArrowHover.png) no-repeat;
+}
+#achieveFlipper .rightArrow:hover {
+	background:url(../images/rightArrowHover.png) no-repeat;
+}
+
+#latestAchieve {
+	width:180px;
+	height:60px;
+	float:left;
+}
+
+.achieveLockedlrg {
+	background:url(../images/lockIcon_big.png) no-repeat;
+	height:50px;
+	width:35px;
+	margin:5px auto;
+	position:relative;
+	}
+
+.achieveUnlocked1, .achieveUnlocked2, .achieveUnlocked3, .achieveUnlocked4, .achieveUnlocked5, .achieveUnlocked6, .achieveUnlocked7, .achieveUnlocked8, .achieveUnlocked9, .achieveUnlocked10 {
+	margin:0 auto;
+	position:relative;
+	height:60px;
+	width:60px;
+}
+.achieveUnlocked1 {
+	background:url(../images/60x60/Ach_Unit1.png) no-repeat;
+}
+.achieveUnlocked2 {
+	background:url(../images/60x60/Ach_Unit2.png) no-repeat;
+}
+.achieveUnlocked3 {
+	background:url(../images/60x60/Ach_Unit3.png) no-repeat;
+}
+.achieveUnlocked4 {
+	background:url(../images/60x60/Ach_Long.png) no-repeat;
+}
+.achieveUnlocked5 {
+	background:url(../images/60x60/Ach_Note.png) no-repeat;
+}
+.achieveUnlocked6 {
+	background:url(../images/60x60/Ach_Daily.png) no-repeat;
+}
+.achieveUnlocked7 {
+	background:url(../images/60x60/Ach_Info.png) no-repeat;
+}
+.achieveUnlocked8 {
+	background:url(../images/60x60/Ach_Score.png) no-repeat;
+}
+.achieveUnlocked9 {
+	background:url(../images/60x60/Ach_Resource.png) no-repeat;
+}
+.achieveUnlocked10 {
+	background:url(../images/60x60/Ach_Review.png) no-repeat;
+}
 /*-------Review----*/
 #reviewLeft {
 	width: 238px;
@@ -674,7 +757,77 @@ Content area
 	width: 950px;
 	height: 330px;
 	overflow: scroll;
-}	
+}
+/*------------Achievements --------*/	
+#achievementContent {
+	height: 450px;
+	overflow: scroll;
+}
+ul#achievementsList {
+	margin:0 auto;
+	padding:0px;
+}
+
+ul#achievementList li.locked, ul#achievementList li.unlocked{
+	display:block;
+	width:860px;
+	height: 50px;
+	border-bottom:solid 1px;
+	list-style:none;
+	padding:5px 0px;
+}
+
+ul#achievementList li.locked p {
+	color:#999;
+	font-weight:bold;
+	line-height:.5em;
+	font-style:italic;
+}
+ul#achievementList li.locked div.achIcon, div.achIcon1, div.achIcon2, div.achIcon3, div.achIcon4, div.achIcon5, div.achIcon6, div.achIcon7, div.achIcon8, div.achIcon9, div.achIcon10 {
+	width:47px;
+	height:47px;
+	float:left;
+	margin-right: 8px;
+}
+ul#achievementList li.locked div.achIcon {
+	background:url(../images/lockIcon_small.png);
+}
+ul#achievementList li.unlocked p {
+	color: #4a8e70;
+	font-style:none;
+	font-weight:bold;
+	line-height:.5em;
+}
+div.achIcon1 {
+	background:url(../images/42x42/Ach_Unit1.png) no-repeat;
+}
+div.achIcon2 {
+	background:url(../images/42x42/Ach_Unit2.png) no-repeat;
+}
+div.achIcon3 {
+	background:url(../images/42x42/Ach_Unit3.png) no-repeat;
+}
+div.achIcon4 {
+	background:url(../images/42x42/Ach_Long.png) no-repeat;
+}
+div.achIcon5 {
+	background:url(../images/42x42/Ach_Note.png) no-repeat;
+}
+div.achIcon6 {
+	background:url(../images/42x42/Ach_Daily.png) no-repeat;
+}
+div.achIcon7 {
+	background:url(../images/42x42/Ach_Info.png) no-repeat;
+}
+div.achIcon8 {
+	background:url(../images/42x42/Ach_Score.png) no-repeat;
+}
+div.achIcon9 {
+	background:url(../images/42x42/Ach_Resource.png) no-repeat;
+}
+div.achIcon10 {
+	background:url(../images/42x42/Ach_Review.png) no-repeat;
+}
 /*------------
 --------------
 Footer
